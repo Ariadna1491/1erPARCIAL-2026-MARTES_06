@@ -1,16 +1,16 @@
 class Pokemon:
-    def__init__(self, nombre, tipo, nivel):
+    def __init__(self, nombre, tipo, nivel):
        self.nombre = nombre
        self.tipo = tipo
        self.nivel = nivel
     def subir_nivel (self):
         if self.nivel < 100:
             self.nivel += 1
-    def__str__(self):
+    def __str__(self):
        return "Nombre: {self.nombre}, Tipo: {self.tipo}, Nivel: {self.nivel}"
 
 class Entrenador:
-    def__init__(self, nombre):
+    def __init__(self, nombre):
        self.nombre = nombre
        self.equipo = []
     def agregar_pokemon(self, nombre):
